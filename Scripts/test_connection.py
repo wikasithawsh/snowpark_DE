@@ -13,7 +13,6 @@ connection_parameters = {"account":"AV52212.ap-south-1.aws",
 }
 
 test_session = Session.builder.configs(connection_parameters).create()
-session.
 
 print(test_session.sql("select current_warehouse(), current_database(), current_schema()").collect())
 
